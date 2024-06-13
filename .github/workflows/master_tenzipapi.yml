@@ -21,8 +21,9 @@ jobs:
         uses: azure/login@v1
         with:
           client-id: ${{ secrets.CLIENT_ID}}
-          tenant-id: ${{ secrets.TENANT_ID}}
           subscription-id: ${{ secrets.SUBSCRIPTIONS_ID}}
+          tenant-id: ${{ secrets.TENANT_ID}}
+          
           
       - name: Deploy WebApp
         id: deploy-to-webapp
